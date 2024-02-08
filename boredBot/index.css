@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    border: 1px dotted grey;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+p {
+    width: 200px;
+    margin-inline: auto;
+    text-align: justify;
+}
+
+.btn {
+    width: 100px;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: brown;
+}

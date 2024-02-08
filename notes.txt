@@ -1,0 +1,39 @@
+API (Application Programming Interface)
+
+Client: A client is any device that connects to the internet to get data from somewhere (that is it makes a "requests")
+Server: A server accepts request(s) from a client and then responds to that request(s) with corresponding data requested
+
+ REQUEST-RESPONSE CYCLE
+    Request-response cycle requires internet connection.
+
+ The request-response cycle works in a way such that the client makes a request to the server and the serve reply back by sending a resonse to the request sent
+
+ Server Response Codes and meaning
+    * 200 - Ok/Success
+    * 400 - Bad request
+    * 500 - Internal Server Error
+
+ JSON stands for javascript object notation
+
+Asynchronous Javascript
+    Asynchronous js means the function runs/happens out of order. i.e the fetch(.then block) does not block other codes from running, they allow other codes to run before the responds from a request comes
+
+LIST OF APIs FOR PRACTICE
+    * https://www.boredapi.com/api/(endpoint)
+    * https://jsonplaceholder.typicode.com/(endpoint)
+
+
+URLs and REST
+* HTTP request: it is a protocol that determine how hyper text(text) should be transferred over the internet
+    HTTP comprise of the following:
+    * Path(URL):
+        This is where your desires resource livesand it comprise of a BAseULR and an Endpoint,
+        e.g, BAseULR: https://jsonplaceholder.typicode.com
+             Endpoint: /posts
+    * Methods(GET,POST,PUT,DELETE):
+        The methods tells the server the intention of the request.
+        How to make a request with a method:
+        note that default fetch without a method is a GET request
+            fetch("https://apis.scrimba.com/jsonplaceholder/todos", {method: "POST"})
+    * Body:
+    * Headers:
