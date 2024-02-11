@@ -36,4 +36,53 @@ URLs and REST
         note that default fetch without a method is a GET request
             fetch("https://apis.scrimba.com/jsonplaceholder/todos", {method: "POST"})
     * Body:
+        This contain the data we want to send to the server
+        - The POST or PUT method is used Headers
+        - the data needs to be converted to JSON first using JSON.stringify() before sending
+        example: 
+            fetch("url", {
+                method: "POST",
+                body: JSON.stringify({
+                    title: 'To do',
+                    done: true
+                })
+            })
     * Headers:
+        this is extra/meta info about hte request e.g auth,body info,client info
+
+How to Clear Form fields
+    use the reset method on the form like so:
+        form.reset()
+    or set the field value to an empty stringify
+        e.g input.value =" " 
+
+REST
+    It is a standardized design pattern for clients and servers to communicate
+
+Principles of REST
+ 1. Client and Server separation
+ 2. Statelessness: means the server does not maintain any memory of the request.
+ 3. Accessing Resources: resources can be accessed by navigating to the route/endpoint where the resource lives.
+    e.g https://mikesbikes.com/api/bikes
+    e.g https://mikesbikes.com/api/bikes/:id
+
+
+Query strings: Allows us to filter the results that we get back
+    e.g /bikes?type=mountain
+        /bikes?type=mountain&brand=trek ====> query string having multiple data 
+
+
+    Other Useful Notes About APIs
+        Some Web APIs for practice:
+        1. Twitter API
+        2. Facebook API
+        3. Weather API
+        4. Reddit API
+        5. GooglePlaces API
+        6. Yelp API
+        7. Yahoo weather API
+
+    IFTTT (ifttt.com): If This Then That(IFTTT) is a way to connect APIs and comprise 309 services.
+    NB: read more about IFTTT
+
+    ProgrammableWeb (deprecated): programmableweb.com is an API directory that comprise of 15k+ APIs
